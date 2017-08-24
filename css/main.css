@@ -1,0 +1,114 @@
+* {
+	margin:0px;
+	padding:0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body {
+	background: #0C0C0C;
+}
+
+img {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.row {
+	display: table;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.col-1 {width: 8.33%;display: table-cell;}
+.col-2 {width: 16.66%;display: table-cell;}
+.col-3 {width: 25%;display: table-cell;}
+.col-4 {width: 33.33%;display: table-cell;}
+.col-5 {width: 41.66%;display: table-cell;}
+.col-6 {width: 50%;display: table-cell;}
+.col-7 {width: 58.33%;display: table-cell;}
+.col-8 {width: 66.66%;display: table-cell;}
+.col-9 {width: 75%;display: table-cell;}
+.col-10 {width: 83.33%;display: table-cell;}
+.col-11 {width: 91.66%;display: table-cell;}
+.col-12 {width: 100%;display: table-cell;}
+
+
+@media only screen and (max-width: 768px) {
+	#menu-pc {
+		position: fixed;
+		width: 0%;
+		height: 0%;
+		overflow: hidden;
+	}
+}
+
+
+@media only screen and (min-width: 769px) {
+	#menu-pc {
+		position: fixed;
+		background: #2e48a9;
+		width: 25%;
+		height: 100%;
+	}
+	#menu-top {
+		position: relative;
+		background: #0e1134;
+		width: 100%;
+		height: 10%;
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+	}
+	#logo {
+		position: relative;
+		top: 5%;
+		width: 100%;
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+	}
+	#llogo {
+		width: 50%;
+	}
+	#logo-text {
+		position: relative;
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+		top: 3%;
+		font-size: 110%;
+	}
+	#menu-items {
+		position: relative;
+		top: 6%;
+	}
+	.menu-item {
+		cursor: pointer;
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+		width: 100%;
+		height: 8%;
+		background: #203493;
+		margin-top: 3%;
+		overflow: hidden;
+		background-image: url('../img/menu-el1.svg');
+		background-position: 175% 0%;
+    background-repeat: no-repeat;
+	}
+	#test {
+		position: absolute;
+		width: 100%;
+		height: 30%;
+		left:52%;
+	}
+}
+
+[class*="col-"] {
+	/*color: white;
+	font-family: 'AleksandraC';*/
+}
