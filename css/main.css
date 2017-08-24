@@ -62,6 +62,7 @@ img {
 		display: flex;
   	align-items: center;
   	justify-content: center;
+		font-size: 1.5vw;
 	}
 	#logo {
 		position: relative;
@@ -80,11 +81,12 @@ img {
   	align-items: center;
   	justify-content: center;
 		top: 3%;
-		font-size: 110%;
+		font-size: 1.3vw;
 	}
 	#menu-items {
 		position: relative;
 		top: 6%;
+		font-size: 1.1vw;
 	}
 	.menu-item {
 		cursor: pointer;
@@ -94,17 +96,58 @@ img {
 		width: 100%;
 		height: 8%;
 		background: #203493;
-		margin-top: 3%;
+		margin-top: 2%;
 		overflow: hidden;
 		background-image: url('../img/menu-el1.svg');
 		background-position: 175% 0%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
+	}
+	#m-item1 {
+		margin-top: 4%;
+		width: 107%;
+		background-color: #182a78;
+		background-image: url('../img/menu-el1.svg');
+		background-position: 135% 0%;
+    background-repeat: no-repeat, no-repeat;
 	}
 	#test {
 		position: absolute;
 		width: 100%;
 		height: 30%;
 		left:52%;
+	}
+	.m-i {
+		position: absolute;
+		width: 8%;
+		left: 96%;
+		opacity: 0;
+	}
+	#m-i1 {
+		opacity: 1;
+	}
+	#footer {
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+		flex-direction: column;
+		position: relative;
+		top: 18%;
+		width:100%;
+		height: 15%;
+		font-size: 1.1vw;
+	}
+	#footer p {
+		margin-top: 1%;
+	}
+	#social a {
+		margin-left: 2%;
+		margin-bottom: 1%;
+	}
+	#social {
+		width: 100%;
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
 	}
 }
 
