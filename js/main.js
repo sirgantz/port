@@ -1,5 +1,17 @@
 $(document).ready(function() {
-$("#m-item1").css({width:"107%", "background-color":"#182a78",'background-position-x': '135%'});
+
+function mi(item) {
+  for (i = 1; i <= 3; i++) {
+    if (item == i)
+    {
+      $('#m-i'+i).stop().animate({'opacity': '1'}, 150, 'linear');
+    }
+    else {
+      $('#m-i'+i).stop().animate({'opacity': '0'}, 70, 'linear');
+    }
+  }
+}
+
 $("#m-item1").click(function() {
   $("#m-item1").stop();
   $("#m-item2").stop();
@@ -7,9 +19,9 @@ $("#m-item1").click(function() {
   $("#m-item2").animate({width:"100%", "background-color":"#203493"}, 100);
   $("#m-item3").animate({width:"100%", "background-color":"#203493"}, 100);
   $("#m-item1").animate({width:"107%", "background-color":"#182a78"}, 100);
-  $('#m-item2').animate({'background-position-x': '175%'}, 100, 'linear');
-  $('#m-item3').animate({'background-position-x': '175%'}, 100, 'linear');
-  $('#m-item1').animate({'background-position-x': '135%'}, 800, 'easeOutElastic');
+  $('#m-item2').animate({'background-position-x': '175%'}, 150, 'easeInCirc');
+  $('#m-item3').animate({'background-position-x': '175%'}, 150, 'easeInCirc');
+  $('#m-item1').animate({'background-position-x': '135%'}, 300, 'easeOutCirc', mi(1));
 });
 $("#m-item2").click(function() {
   $("#m-item1").stop();
@@ -18,9 +30,9 @@ $("#m-item2").click(function() {
   $("#m-item1").animate({width:"100%", "background-color":"#203493"}, 100);
   $("#m-item3").animate({width:"100%", "background-color":"#203493"}, 100);
   $("#m-item2").animate({width:"107%", "background-color":"#182a78"}, 100);
-  $('#m-item1').animate({'background-position-x': '175%'}, 100, 'linear');
-  $('#m-item3').animate({'background-position-x': '175%'}, 100, 'linear');
-  $('#m-item2').animate({'background-position-x': '135%'}, 800, 'easeOutElastic');
+  $('#m-item1').animate({'background-position-x': '175%'}, 150, 'easeInCirc');
+  $('#m-item3').animate({'background-position-x': '175%'}, 150, 'easeInCirc');
+  $('#m-item2').animate({'background-position-x': '135%'}, 300, 'easeOutCirc', mi(2));
 
   //background-position: -110% 0%;
 });
@@ -31,9 +43,9 @@ $("#m-item3").click(function() {
   $("#m-item1").animate({width:"100%", "background-color":"#203493"}, 100);
   $("#m-item2").animate({width:"100%", "background-color":"#203493"}, 100);
   $("#m-item3").animate({width:"107%", "background-color":"#182a78"}, 100);
-  $('#m-item1').animate({'background-position-x': '175%'}, 100, 'linear');
-  $('#m-item2').animate({'background-position-x': '175%'}, 100, 'linear');
-  $('#m-item3').animate({'background-position-x': '135%'}, 800, 'easeOutElastic');
+  $('#m-item1').animate({'background-position-x': '175%'}, 150, 'easeInCirc');
+  $('#m-item2').animate({'background-position-x': '175%'}, 150, 'easeInCirc');
+  $('#m-item3').animate({'background-position-x': '135%'}, 300, 'easeOutCirc', mi(3));
 });
 /* AXE
 203493
