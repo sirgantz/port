@@ -48,25 +48,42 @@ img {
 
 
 @media only screen and (min-width: 769px) {
+	#content {
+		overflow: hidden;
+	}
+	.block-pc {
+		width: 75%;
+		position: relative;
+		left: 25%;
+		height: 100%;
+		background: none;
+		color: white;
+	}
+	#axe-menu {
+		z-index: 2;
+	}
 	#menu-pc {
 		position: fixed;
 		background: #2e48a9;
 		width: 25%;
 		height: 100%;
+		z-index: 1;
 	}
 	#menu-top {
 		position: relative;
 		background: #0e1134;
+		background-image: url('../img/mtop.png');
+		background-size: 100% 100%;
 		width: 100%;
 		height: 10%;
 		display: flex;
   	align-items: center;
   	justify-content: center;
-		font-size: 1.5vw;
+		font-size: 1.6vw;
 	}
 	#logo {
 		position: relative;
-		top: 5%;
+		top: 4%;
 		width: 100%;
 		display: flex;
   	align-items: center;
@@ -80,7 +97,7 @@ img {
 		display: flex;
   	align-items: center;
   	justify-content: center;
-		top: 3%;
+		top: 2%;
 		font-size: 1.3vw;
 	}
 	#menu-items {
@@ -94,12 +111,13 @@ img {
   	align-items: center;
   	justify-content: center;
 		width: 100%;
-		height: 8%;
+		height: 7.4%;
 		background: #203493;
 		margin-top: 2%;
 		overflow: hidden;
 		background-image: url('../img/menu-el1.svg');
 		background-position: 175% 0%;
+		background-size: auto 106%;
     background-repeat: no-repeat, no-repeat;
 	}
 	#m-item1 {
@@ -131,10 +149,10 @@ img {
   	justify-content: center;
 		flex-direction: column;
 		position: relative;
-		top: 18%;
+		top: 20%;
 		width:100%;
 		height: 15%;
-		font-size: 1.1vw;
+		font-size: 0.95vw;
 	}
 	#footer p {
 		margin-top: 1%;
